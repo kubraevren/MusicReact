@@ -1,0 +1,77 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+    background: #ffb5b5;
+    min-height: 100vh;
+}
+
+/* 🪄 Kart */
+.card {
+    width: 250px;
+    height: 38vh;
+    background:  #eaf6f6;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s ease;
+    cursor: pointer;
+}
+
+/* ✨ Hover efekti */
+.card:hover {
+    transform: translateY(-7px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    background: #fcfefe;
+}
+
+/* 🎨 Başlık */
+.card h1 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #2b2b2b;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+/* 💫 Küçük animasyon girişi */
+.card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 📱 Responsive düzen */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .card-container {
+        gap: 15px;
+        padding: 20px;
+    }
+}

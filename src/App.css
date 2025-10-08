@@ -1,0 +1,108 @@
+
+body {
+  padding: 0;
+  margin-left: 0;
+  margin-top: 0;
+  font-family: Arial, sans-serif;
+
+  background-color: #ddb8b8;
+
+}
+
+.navbar {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9096d5;
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.navbar ul li {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* Önemli: MusicCard Container için özel stil */
+.MusicCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid rgb(68, 55, 55);
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-container input:focus {
+  border-color: #e77387;
+  box-shadow: 0 0 6px rgba(231, 115, 135, 0.3);
+  outline: none;
+}
+
+.input-container button {
+  padding: 10px 18px;
+  background-color: #e77387;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.input-container button:hover {
+  background-color: #d45a73;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .input-container {
+    flex-direction: column;
+  }
+
+  .input-container input,
+  .input-container button {
+    width: 100%;
+  }
+}
+
+.progress-demo {
+  background-color: transparent !important;
+  background-color: red;
+}
+
+
+.naber{
+  font-size: 120px;
+}
